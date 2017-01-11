@@ -1,0 +1,21 @@
+
+%rapbr{
+	white-space: pre-line;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	white-space: -moz-pre-wrap;
+	word-wrap: break-word;
+}
+%oneline{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+%notext{
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+}
+%mincho{
+	font-family: $font_mincho;
+}

@@ -1,0 +1,22 @@
+$start: 4;
+$end: 50;
+$step: 10;
+$unit: px;
+.w{
+	@for $i from $start through $end {
+		&#{$i * $step}{
+			width: #{$i * $step}px !important;
+		}
+	}
+}
+$start: 1;
+$end: 20;
+$step: 5;
+.w{
+	@for $i from $start through $end {
+		&#{$i * $step}p{
+			width: percentage($i * $step / 100) !important;
+
+		}
+	}
+}

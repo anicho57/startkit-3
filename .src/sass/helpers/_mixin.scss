@@ -1,0 +1,43 @@
+
+@mixin text-border($color, $size:1px) {
+	text-shadow: $size 0 0 $color,
+				 0 $size 0 $color,
+				(-$size) 0 0 $color,
+				 0 (-$size) 0 $color;
+}
+
+@mixin clearfix() {
+	&:after{
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+
+@mixin fade-ini($time: .4s){
+	transition: visibility $time, opacity $time;
+	visibility: hidden;
+	opacity: 0;
+	&:hover{
+		visibility: visible;
+		opacity: 1;
+	}
+}
+
+@mixin max-screen($break-point) {
+	@media screen and (max-width: $break-point) {
+		@content;
+	}
+}
+
+@mixin min-screen($break-point) {
+	@media screen and (min-width: $break-point) {
+		@content;
+	}
+}
+
+@mixin screen($break-point-min, $break-point-max) {
+	@media screen and (min-width: $break-point-min) and (max-width: $break-point-max) {
+		@content;
+	}
+}

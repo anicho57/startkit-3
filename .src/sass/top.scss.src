@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+// ----------------------------------
+// Setting
+// ----------------------------------
+@import "config/color";
+@import "config/font";
+@import "config/layout";
+
+// ----------------------------------
+// Helper
+// ----------------------------------
+@import "helpers/function";
+@import "helpers/mixin";
+@import "helpers/extend";
+
+// ----------------------------------
+// Utility
+// ----------------------------------
+// @import "utilities/box-sizing";
+// @import "utilities/img-max-width";
+// @import "utilities/display";
+// @import "utilities/width";
+// @import "utilities/float";
+// @import "utilities/clearfix";
+// @import "utilities/margin";
+// @import "utilities/padding";
+// @import "utilities/font-color";
+// @import "utilities/font-size";
+// @import "utilities/text-align";
+// @import "utilities/list";
+
+// @import "utilities/keyframes/fadein";
+// @import "utilities/keyframes/spin";
+
+
+// ----------------------------------
+// Modules
+// ----------------------------------
+// @import "modules/button";
+// @import "modules/form";
+// @import "modules/loading";
+// @import "modules/grid";
+// @import "modules/webicon";
+
+
+// ----------------------------------
+// Main style
+// ----------------------------------
+
+$type: "all";
+@import 'pages/top';
+
+/*----------------------------------------------------
+	media query
+----------------------------------------------------*/
+
+/* smart phone
+-------------------------------------------------- */
+@media only screen and (max-width:#{$mq_tab_width - 1}) {
+    $type: "sp";
+    @import 'pages/top';
+}
+
+/* tablet
+-------------------------------------------------- */
+@media only screen and (min-width:#{$mq_tab_width}) and (max-width:#{$mq_pc_width - 1}) {
+    $type: "tab";
+    @import 'pages/top';
+}
+
+/* pc
+-------------------------------------------------- */
+@media only screen and (min-width:#{$mq_pc_width}) {
+    $type: "pc";
+    @import 'pages/top';
+}
+

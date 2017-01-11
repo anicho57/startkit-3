@@ -1,0 +1,66 @@
+
+$margin_all: (
+	xl:96px,
+	lg:64px,
+	md:48px,
+	sm:24px,
+	xs:.8em
+);
+$margin_tab: (
+	xl:64px,
+	lg:48px,
+	md:32px,
+	sm:16px,
+	xs:.8em
+);
+$margin_sp: (
+	xl:48px,
+	lg:32px,
+	md:24px,
+	sm:16px,
+	xs:.6em
+);
+.margin{
+	@if $type == "all"{
+		@each $name, $size in $margin_all {
+			&-#{$name}{
+				margin-top: $size;
+				margin-bottom: $size;
+			}
+			&-top-#{$name}{
+				margin-top: $size;
+			}
+			&-bottom-#{$name}{
+				margin-bottom: $size;
+			}
+		}
+	}
+	@if $type == "tab"{
+		@each $name, $size in $margin_tab {
+			&-#{$name}{
+				margin-top: $size;
+				margin-bottom: $size;
+			}
+			&-top-#{$name}{
+				margin-top: $size;
+			}
+			&-bottom-#{$name}{
+				margin-bottom: $size;
+			}
+		}
+	}
+	@if $type == "sp"{
+		@each $name, $size in $margin_sp {
+			&-#{$name}{
+				margin-top: $size;
+				margin-bottom: $size;
+			}
+			&-top-#{$name}{
+				margin-top: $size;
+			}
+			&-bottom-#{$name}{
+				margin-bottom: $size;
+			}
+		}
+	}
+}

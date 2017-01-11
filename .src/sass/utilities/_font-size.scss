@@ -1,0 +1,26 @@
+$start: 10;
+$end: 32;
+$unit: rem;
+
+.fz{
+	@for $i from $start through $end {
+		&#{$i}{
+			font-size: ($i / 10)#{$unit} !important;
+		}
+	}
+	&-hg{
+		font-size: 2.13em !important;
+	}
+	&-lg{
+		font-size: 1.6em !important;
+	}
+	&-md{
+		font-size: 1.2em !important;
+	}
+	&-sm{
+		font-size: .933em !important;
+	}
+	&-xs{
+		font-size: .8em !important;
+	}
+}

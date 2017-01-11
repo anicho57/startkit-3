@@ -1,0 +1,19 @@
+$start: 0;
+$end: 20;
+$step: 5;
+$unit: px;
+.pt{
+	@for $i from $start through $end {
+		&#{$i * $step} { padding-top: #{$step * $i}$unit !important; }
+	}
+}
+.pb{
+	@for $i from $start through $end {
+		&#{$i * $step} { padding-bottom: #{$step * $i}$unit !important; }
+	}
+}
+.p{
+	@for $i from $start through $end {
+		&#{$i * $step} { padding: #{$step * $i}$unit !important; }
+	}
+}

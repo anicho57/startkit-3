@@ -1,0 +1,33 @@
+$column: 16;
+$grid-margin: 30px;
+.grid{
+	&-row{
+		margin-left: -($grid-margin / 2);
+		margin-right: -($grid-margin / 2);
+		&:after{
+			content: "";
+			display: block;
+			clear: both;
+		}
+		& + &{
+			margin-top: $grid-margin;
+		}
+	}
+	@at-root{
+		%grid-base-pc{
+			box-sizing: border-box;
+			float: left;
+			padding: 0 ($grid-margin / 2);
+			:first-child{
+				margin-top: 0;
+			}
+		}
+	}
+	@for $i from 1 through $column {
+		&-#{$i}{
+			@extend %grid-base-pc;
+			$width: percentage($i / $column);
+			width: $width;
+		}
+	}
+}

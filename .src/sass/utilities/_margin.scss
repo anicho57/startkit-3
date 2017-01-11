@@ -1,0 +1,14 @@
+$start: -4;
+$end: 20;
+$step: 5;
+$unit: px;
+.mt{
+	@for $i from $start through $end {
+		&#{$i * $step} { margin-top: #{$step * $i}$unit !important; }
+	}
+}
+.mb{
+	@for $i from $start through $end {
+		&#{$i * $step} { margin-bottom: #{$step * $i}$unit !important; }
+	}
+}

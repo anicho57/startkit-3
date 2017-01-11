@@ -1,0 +1,29 @@
+
+// form element
+textarea, input, select{
+	padding: 3px;
+	// appearance: none;
+}
+[type="submit"],button{
+	cursor: pointer;
+}
+[type="text"],
+[type="password"],
+[type="email"],
+[type="url"],
+[type="number"],
+select,
+textarea{
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	background-color: #fbfbfb;
+	&:focus{
+		border-color: #999;
+		background-color: #fefefe;
+	}
+}
+::-webkit-input-placeholder {color: #999;}
+::-moz-placeholder {color: #999;}
+:-ms-input-placeholder {color: #999;}
+.placeholder{color: #999;}
+

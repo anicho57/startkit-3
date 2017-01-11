@@ -1,0 +1,16 @@
+
+@if $type == "all"{
+	.for-pc{}
+	.for-tab{ display: none;}
+	.for-sp{ display: none;}
+}
+@if $type == "tab"{
+	.for-pc{ display: none;}
+	.for-tab{ display: block;}
+	.for-sp { display: none;}
+}
+@if $type == "sp"{
+	.for-pc{ display: none;}
+	.for-tab{ display: none;}
+	.for-sp{ display: block;}
+}

@@ -1,0 +1,20 @@
+
+ul{
+	list-style-type: none;
+	&.disc{
+		list-style-type: disc;
+		padding: 0 0 0 1.5em;
+	}
+	&.circle{
+		list-style: circle;
+		padding: 0 0 0 1.5em;
+	}
+	&.square{
+		list-style: square;
+		padding: 0 0 0 1.5em;
+	}
+}
+ol{
+	padding: 0 0 0 1.5em;
+}
+

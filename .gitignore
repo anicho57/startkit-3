@@ -1,0 +1,25 @@
+﻿#　除外したいパターンのパスを書く
+#.gitignore
+
+# eclipse
+.settings
+.buildpath
+.project
+
+# sass
+.sass-cache
+
+# Smarty
+templates_c
+*.tpl.php
+
+# sublime Setting File
+*.sublime-project
+*.sublime-workspace
+#sftp-config.json
+
+#gulp
+node_modules
+.copy
+diff
+.src/img

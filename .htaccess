@@ -1,0 +1,17 @@
+AddType application/x-httpd-php .php .html
+
+# File css/js gzip Setting
+RewriteCond %{HTTP:Accept-Encoding} gzip
+RewriteCond %{REQUEST_FILENAME} !\.gz$
+RewriteCond %{REQUEST_FILENAME}\.gz -s
+RewriteRule .+ %{REQUEST_URI}.gz
+<files *.html.gz>
+AddType "text/html;charset=utf-8" .gz
+</files>
+<files *.js.gz>
+AddType "text/javascript;charset=utf-8" .gz
+</files>
+<files *.css.gz>
+AddType "text/css" .gz
+</files>
+AddEncoding x-gzip .gz

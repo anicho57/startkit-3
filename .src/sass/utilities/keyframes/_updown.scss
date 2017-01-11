@@ -1,0 +1,20 @@
+@-webkit-keyframes updown{
+	20%{
+		-webkit-transform: translateY(-10%);
+		        transform: translateY(-10%);
+	}
+	80%{
+		-webkit-transform: translateY(10%);
+		        transform: translateY(10%);
+	}
+}
+@keyframes updown{
+	20%{
+		-webkit-transform: translateY(-10%);
+		        transform: translateY(-10%);
+	}
+	80%{
+		-webkit-transform: translateY(10%);
+		        transform: translateY(10%);
+	}
+}

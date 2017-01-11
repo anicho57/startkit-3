@@ -1,0 +1,29 @@
+
+$type: "all";
+@import 'import';
+
+// ----------------------------------------------------
+// media query
+// ----------------------------------------------------
+
+// Smart Phone
+// ----------------------------------------------------
+@media only screen and (max-width:#{$mq_tab_width - 1}) {
+    $type: "sp";
+    @import 'import';
+}
+
+// Tablet
+// ----------------------------------------------------
+@media only screen and (min-width:#{$mq_tab_width}) and (max-width:#{$mq_pc_width - 1}) {
+    $type: "tab";
+    @import 'import';
+}
+
+// PC
+// ----------------------------------------------------
+@media only screen and (min-width:#{$mq_pc_width}) {
+    $type: "pc";
+    @import 'import';
+}
+

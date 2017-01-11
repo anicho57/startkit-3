@@ -1,0 +1,44 @@
+
+html {
+	overflow-y: scroll;
+	font-size: $root-font-size;
+}
+body {
+	color: $color_font;
+	font-family: $base_font;
+	font-size: $base_font_size;
+	letter-spacing: $base_letter_spacing;
+	font-feature-settings: "palt";
+}
+
+input,select,option,textarea{
+	font-family: $base_font;
+}
+
+// リンク
+a , a *{
+	transition-property: color, border-color, background-color, opacity;
+    transition-timing-function: ease-in-out;
+}
+a{
+	$color_link: $color_main;
+	color: $color_link;
+	text-decoration: none;
+	&:visited {
+		color: lighten($color_link, 5%);
+	}
+	&:hover {
+		outline: 0;
+		color: darken($color_link, 5%);
+		text-decoration: underline;
+	}
+	&:active {
+		outline: 0;
+		color: $color_accent;
+	}
+}
+
+::selection { // css3
+	background-color: darken($color_main, 10%);
+	color: #fff;
+}

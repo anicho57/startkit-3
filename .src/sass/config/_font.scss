@@ -1,0 +1,14 @@
+
+
+// ベースフォント
+// $base_font: "メイリオ", "Meiryo", verdana, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;
+// $base_font: "Noto Sans JP", "Noto Sans CJK JP", "Noto Sans Japanese", Helvetica-Light, 'Helvetica Light', Helvetica, YuGothic, "Yu Gothic", "游ゴシック", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", Meiryo, "メイリオ", "MS PGothic", "ＭＳ Ｐゴシック", sans-serif;
+$base_font: Helvetica-Light, 'Helvetica Light', Helvetica, YuGothic, "Yu Gothic", "游ゴシック", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", Meiryo, "メイリオ", "MS PGothic", "ＭＳ Ｐゴシック", sans-serif;
+// 明朝
+$font_mincho: YuMincho, "Yu Mincho", "游明朝体", "Hiragino Mincho Pro", "ヒラギノ明朝 Pro", "MS PMincho", "ＭＳ Ｐ明朝", serif;
+
+// ベースフォントサイズ
+$root-font-size: 62.5%;
+$base_font_size: 1.5rem;
+
+$base_letter_spacing: .05em;
