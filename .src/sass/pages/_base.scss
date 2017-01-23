@@ -18,7 +18,8 @@ input,select,option,textarea{
 // リンク
 a , a *{
 	transition-property: color, border-color, background-color, opacity;
-    transition-timing-function: ease-in-out;
+	transition-duration: .4s;
+	transition-timing-function: ease-in-out;
 }
 a{
 	$color_link: $color_main;

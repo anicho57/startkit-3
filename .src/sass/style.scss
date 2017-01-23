@@ -33,7 +33,7 @@
 // ----------------------------------
 @import "pages/base";
 
-@import "media-queries/common";
+@import "media-queries/main";
 // @import 'pages/common';
 
 
@@ -67,7 +67,7 @@
 @import "modules/button";
 @import "modules/form";
 // @import "modules/loading";
-// @import "modules/grid";
+@import "modules/grid";
 @import "modules/webicon";
 // @import "modules/styling-area";
 

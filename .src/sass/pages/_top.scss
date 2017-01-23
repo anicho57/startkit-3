@@ -1,17 +1,6 @@
-#id {
-	@if $type == "all" {
 
-	}
-
-	@if $type == "sp" or $type == "tab"{
-
-	}
-
-	@if $type == "sp" {
-
-	} @else if $type == "tab" {
-
-	} @else if $type == "pc" {
-
+.test{
+	@if $type == "all"{
+		background-color: #000;
 	}
 }
