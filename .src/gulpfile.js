@@ -74,8 +74,8 @@ gulp.task('sass', function(){
         // .pipe(sassInheritance({dir: path.src + 'sass/'}))
 
         // キャッシュその２
-        // .pipe(cache('sass'))
-        // .pipe(sassPartialsImported(path.src + 'sass/'))
+        .pipe(cache('sass'))
+        .pipe(sassPartialsImported(path.src + 'sass/'))
 
         // .pipe(globSass())
         .pipe(sourcemaps.init()) // ソースマップ吐き出す設定

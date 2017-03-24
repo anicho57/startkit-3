@@ -1,6 +1,5 @@
 {
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-sass-glob-import": "^0.1.0"
+    "gulp": "^3.9.1"
   }
 }
