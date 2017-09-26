@@ -1,6 +1,6 @@
 var path = {
-    module: '/home/mosk/lib/node/node_modules/',
-    // module: 'c://lib/node/node_modules/',
+    // module: '/home/mosk/lib/node/node_modules/',
+    module: 'c://lib/node/node_modules/',
     // module: 'z://WEB/lib/node_modules/',
     src : '', // Gulpに関わるもろもろ
     dist : '../', // 公開ファイル置き場
@@ -170,8 +170,8 @@ gulp.task('default', function(){
     watch( html_src, function(e){ gulp.start("src-reload"); } );
     watch( sass_src, function(e){ gulp.start("sass"); } );
     // watch( cssmin_src, function(e){ gulp.start('cssmin'); } );
-    watch( image_src, function(e){ gulp.start("image"); } );
-    watch( update_src, function(e){ gulp.start('update'); } );
+    // watch( image_src, function(e){ gulp.start("image"); } );
+    // watch( update_src, function(e){ gulp.start('update'); } );
     // watch( js_src, function(e){ gulp.start('jshint'); } );
 
 });

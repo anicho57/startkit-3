@@ -1,6 +1,6 @@
 $column: 12;
-$grid_margin_pc: 30px;
-$grid_margin_tab: 20px;
+$grid_margin_pc: 40px;
+$grid_margin_tab: 24px;
 $grid_margin_sp: 16px;
 .row{
 	@if $type == "all"{
@@ -58,6 +58,9 @@ $grid_margin_sp: 16px;
 			&-tab-#{$i}{
 				$width: percentage($i / $column);
 				width: $width;
+				@if $i == $column {
+					float: none;
+				}
 			}
 		}
 	}
@@ -66,6 +69,9 @@ $grid_margin_sp: 16px;
 			&-sp-#{$i}{
 				$width: percentage($i / $column);
 				width: $width;
+				@if $i == $column {
+					float: none;
+				}
 			}
 		}
 	}

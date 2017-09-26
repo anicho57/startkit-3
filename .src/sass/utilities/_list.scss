@@ -1,20 +1,47 @@
 
 ul{
 	list-style-type: none;
-	&.disc{
-		list-style-type: disc;
-		padding: 0 0 0 1.5em;
+	&.list-disc{
+		> li{
+			position: relative;
+			padding: 0 0 0 1.5em;
+			&:before{
+				content: '●';
+				position: absolute;
+				left: 0;
+				color: $color_main;
+			}
+		}
 	}
-	&.circle{
+	&.list-circle{
 		list-style: circle;
 		padding: 0 0 0 1.5em;
 	}
-	&.square{
+	&.list-square{
 		list-style: square;
 		padding: 0 0 0 1.5em;
+	}
+	&.list-kome{
+		> li{
+			position: relative;
+			padding-left: 1.2em;
+			&:before{
+				content: '※';
+				position: absolute;
+				left: 0;
+				color: $color_font;
+			}
+		}
 	}
 }
 ol{
 	padding: 0 0 0 1.5em;
 }
 
+.list{
+	> li{
+		&:not(:last-child){
+			margin-bottom: .5em;
+		}
+	}
+}

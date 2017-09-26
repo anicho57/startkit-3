@@ -1,11 +1,5 @@
 html:not(.no-js){
 	.is-loading{
-		*,*:before,*:after{
-			-webkit-animation: none !important;
-			        animation: none !important;
-			-webkit-transition: none !important;
-			        transition: none !important;
-		}
 		&:after{
 			$size: 48px;
 			content: '';
@@ -26,8 +20,9 @@ html:not(.no-js){
 		// 	visibility: hidden;
 		// }
 	}
-	// .page{
-	// 	-webkit-animation: fadein 1s;
-	// 	        animation: fadein 1s;
-	// }
 }
+// body:not(.is-loading){
+// 	.page{
+// 		animation: fadein 1s;
+// 	}
+// }
